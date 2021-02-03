@@ -1,0 +1,46 @@
+<div class="background">
+    <div class="background-2 pad-t-b pad pad-left pad-rig">
+        <div class="flex-s marg-bot">
+            <h2>To do list</h2>
+            <button class="but marg-left" (click)="add=true">add</button>
+        </div>
+        <div class="div-1">
+            <div class="flex-s">
+                <h3 class="in-list black-b">User</h3>
+                <h3 class="in-list-long black-b">Title</h3>
+                <h3 class="in-list black-b">Status</h3>
+                <h3 class="in-list black-b">Date</h3>
+            </div>
+            <div class="flex-s" *ngFor="let i of toDoList let ind=index">
+                <p class="in-list">{{i.user}}</p>
+                <p class="in-list-long">{{i.title}}</p>
+                <p class="in-list">{{i.status}}</p>
+                <p class="in-list">{{i.date}}</p>
+                <button class="but-2" (click)="editId=ind; listEdit()">edit</button>
+            </div>
+            <div *ngIf="edit" class="black-b">
+                <select [(ngModel)]="editUser"class="in-list">
+                    <option class="options" *ngFor="let i of users">{{i}}</option>
+                </select>
+                <input type="text" [(ngModel)]="editTitle"class="in-list-long">
+                <select [(ngModel)]="editStatus"class="in-list">
+                    <option class="options" *ngFor="let i of statusList">{{i}}</option>
+                </select>
+                <input type="date" [(ngModel)]="editDate"class="in-list">
+                <button class="but-2" (click)="editFinal()">save</button>
+            </div>
+            <div *ngIf="add" class="black-b">
+                <select [(ngModel)]="addUser"class="in-list">
+                    <option class="options" *ngFor="let i of users">{{i}}</option>
+                </select>
+                <input type="text" [(ngModel)]="addTitle"class="in-list-long">
+                <select [(ngModel)]="addStatus"class="in-list">
+                    <option class="options" *ngFor="let i of statusList">{{i}}</option>
+                </select>
+                <input type="date" [(ngModel)]="addDate"class="in-list">
+                <button class="but-2" (click)="saveAdd()">save</button>
+            </div>
+            <h3 class="red marg-top" *ngIf=error>fill all fields please</h3>
+        </div>
+    </div>
+</div>

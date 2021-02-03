@@ -1,1 +1,280 @@
+/* reset */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+body{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+div{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+header{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+nav{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box
+}
+section{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+article{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+footer{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+*{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+*:focus{
+	outline: none;
+}
+
+
+
 /* You can add global styles to this file, and also import other style files */
+/* components */
+.background{
+    color: rgb(12, 12, 41);
+    background-image: url(../src/images/b.jpg);
+    background-size: cover;
+}
+.background-2{
+    background-color: rgba(3, 3, 15, 0.822);
+    padding-bottom: 600px;
+}
+*{
+    color: rgb(255, 225, 225);
+    font-family: 'Poppins';
+    background-color: transparent;
+}
+.div-1{
+    display: inline-block;
+}
+.in-list{
+    padding: 7px 20px 7px 20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    width: 150px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.137);
+}
+.in-list-long{
+    padding: 7px 20px 7px 20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    width: 350px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.137);
+}
+.but-2{
+    padding: 7px 20px 7px 20px;
+    margin-left: 20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.137);
+}
+.black-b{
+    background-color: black;
+    margin-top: 20px;
+}
+.red{
+    color: red;
+}
+/* templates */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-sb{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-s{
+    display: flex;
+    justify-content: start;
+}
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.pad-t-b{
+    padding-top: 80px;
+}
+.pad-left{
+    padding-left: 120px ;
+}
+.marg-left{
+    margin-left: 60px ;
+}
+.pad-rig{
+    padding-right: 120px ;
+}
+.marg-bot{
+    margin-bottom: 30px;
+}
+.marg-top{
+    margin-top: 30px;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 20px;
+}
+.options{
+    background-color: rgb(33, 30, 44);
+    color: white;
+}
+.but{
+    background-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 10px;
+    padding:10px 40px;
+    font-size: 20px;
+}
+.borders{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+.b1{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(12, 12, 32, 0.158);
+    margin-right: 50px;
+}
+.b2{
+    width: 150px;
+    height: 150px;
+    top: 0px;
+    left: 0px;
+}
+.line{
+    width: 60px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg);
+}
+.line-2{
+    width: 60px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg);
+}
+.t10-30{
+    transform: rotate(-135deg);
+}
+.t12-00{
+    transform: rotate(-90deg);
+
+}
+.t1-30{
+    transform: rotate(-45deg);
+}
+
+.t4-30{
+    transform: rotate(45deg);
+}
+.t6-00{
+    transform: rotate(90deg);
+}
+.t7-30{
+    transform: rotate(135deg);
+}
+.t9-00{
+    transform: rotate(180deg);
+}
+/* text */
+.green{
+    color:green
+}
+.red{
+    color: red;
+}
+/* hover */
+.but:hover, .but-2:hover{
+    background-color: rgba(184, 184, 184, 0.733);
+    color: black;
+}
